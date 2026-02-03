@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* main */
+#header .gnb > li:nth-of-type(4) > a {color: var(--main-color01);}
+#header .gnb > li:nth-of-type(4) > a::after {content: ""; display: block; width: 100%; height: 3px; background: var(--main-color01); margin-top: 5px; transition: all 0.5s;}
+#main {margin-top: 134px;}
+
+@media (max-width: 1200px) {
+  #main {margin-top: 88px;}
+}
+
+/* finance_menu */
+.finance_menu {padding: 50px 0 80px;}
+.finance_menu .inner {max-width: 1240px;}
+.finance_menu h2 {font-size: 3rem; margin-bottom: 50px;}
+.finance_menu .finance_list {display: grid; grid-template-columns: repeat(3,1fr); gap: 30px;}
+.finance_menu .finance_list li {padding: 50px 30px 0; background: #FFF7F6; border-radius: 50px; position: relative;}
+.finance_menu .finance_list li h3 a {text-align: center; font-size: 3rem; margin-bottom: 100px; display: block;}
+.finance_menu .finance_list li dl {margin-bottom: 30px; padding: 0 20px;}
+.finance_menu .finance_list li dl dt {font-weight: 600; font-size: 2rem;}
+.finance_menu .finance_list li dl dd {font-weight: 600; font-size: 2.4rem;}
+.finance_menu .finance_list li dl dd span {color: var(--main-color01);}
+.finance_menu .finance_list li a.apply {display: block; text-align: center; border-top: 3px solid #d9d9d9; padding: 40px; width: 100%; border-radius: 0 0 50px 50px; font-size: 2rem; font-weight: 600;}
+.finance_menu .finance_list li a strong {font-weight: 600; color: var(--main-color01);}
+
+@media (max-width: 1080px) {
+  .finance_menu .finance_list {gap: 10px; word-break: keep-all;}
+  .finance_menu .finance_list li {padding: 50px 10px 0; border-radius: 20px;}
+  .finance_menu .finance_list li h3 a{ font-size: 2.4rem;}
+  .finance_menu .finance_list li dl dt {font-size: 1.6rem;}
+  .finance_menu .finance_list li dl dd {font-size: 2rem;}
+  .finance_menu .finance_list li a.apply {font-size: 1.6rem;}
+}
+
+@media (max-width: 800px) {
+    .finance_menu {padding: 50px 0;}
+  .finance_menu h2 {font-size: 2.4rem; text-align: center; margin-bottom: 20px;}
+  .finance_menu .finance_list {grid-template-columns: 100%;}
+  .finance_menu .finance_list li {padding: 30px; width: 80%; margin: 0 auto;}
+  .finance_menu .finance_list li .finance_option {display: flex; gap: 50px;}
+  .finance_menu .finance_list li h3 a {margin-bottom: 20px; text-align-last: left; background: url(../images/sub/myBC_arrow_m.png) no-repeat right top 7px; font-size: 2rem;}
+  .finance_menu .finance_list li br {display: none;}
+  .finance_menu .finance_list li dl {padding: 0; margin: 0;}
+  .finance_menu .finance_list li a.apply {display: none;}
+}
+
+@media (max-width: 440px) {
+  .finance_menu .finance_list li {width: 100%;}
+  .finance_menu .finance_list li .finance_option {gap: 30px;}
+  .finance_menu .finance_list li dl dt {font-size: 1.4rem;}
+  .finance_menu .finance_list li dl dd {font-size: 1.6rem;}
+}
+
+
+/* con */
+.con {margin-bottom: 80px;}
+.con .inner {max-width: 1240px;}
+.con ul { display: grid; grid-template-columns: repeat(3,1fr); gap: 30px;}
+.con ul li a {display: flex; gap: 20px; padding: 20px 0; border-radius: 30px; background: #FFF; box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);align-items: center; justify-content: center;}
+.con ul li dl {width: 160px;}
+.con ul li dl dt {font-weight: 700;}
+.con ul li dl dd {font-weight: 500; color: var(--sub-color01); font-size: 1.4rem;}
+.con ul li dl dd span{color: var(--main-color01); font-weight: 600;}
+
+@media (max-width: 1080px) {
+  .con ul {gap: 15px;}
+}
+@media (max-width: 800px) {
+  .con ul { display: grid; grid-template-columns: repeat(2,1fr);}
+}
+@media (max-width: 650px) {
+  .con ul li a {gap: 10px;}
+}
+@media (max-width: 550px) {
+    .con {margin-bottom: 50px;}
+  .con ul { display: grid; grid-template-columns: 100%; width: 80%; margin: 0 auto;}
+}
+@media (max-width: 440px) {
+  .con ul {width: 100%;}
+}
+
+/* notice */
+.notice { margin-bottom: 100px;}
+.notice .inner {max-width: 1240px;}
+.notice a {display: block; width: 100%; padding: 20px; border: 1px solid #d9d9d9; border-radius: 10px;}
+.notice a span {display: inline-block; font-weight: 600; background: url(../images/sub/myBC_arrow_b.png) no-repeat right top 4px / 16px; padding-right: 25px;}
+
+@media (max-width: 550px) {
+  .notice a {width: 80%; margin: 0 auto;}
+.notice {margin-bottom: 50px;}
+}
+@media (max-width: 440px) {
+  .notice a {width: 100%; font-size: 1.4rem;}
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blacktea</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: #eee;
+        }
+
+        #wrap {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            position: fixed;
+            right: 10%;
+            bottom: 0;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn a.gotop {
+            background: #FFF4ED;
+            color: #FF9898;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        @media (max-width:768px) {
+            .btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="btn">
+            <a href="#" class="gotop">↑</a>
+        </div>
+        <div class="blacktea_img">
+            <img src="../images/Blacktea_guide.jpg" alt="홍차카드뉴스">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* main */
+#main {margin-top: 134px;}
+#header .gnb > li:nth-of-type(5) > a {color: var(--main-color01);}
+#header .gnb > li:nth-of-type(5) > a::after {content: ""; display: block; width: 100%; height: 3px; background: var(--main-color01); margin-top: 5px; transition: all 0.5s;}
+
+@media (max-width: 1200px) {
+  #main {margin-top: 88px;}
+}
+
+/* life_auto */
+.life_auto {padding: 150px 0; }
+.life_auto h2 {font-size: 3rem; font-weight: 600;}
+.life_auto .auto_list {padding: 80px 0 20px; position: relative;}
+.life_auto .auto_list ul li {display: flex; justify-content: center; transition: all 0.5s;}
+.life_auto .auto_list ul li dl {padding: 40px 60px; background: #fff; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); border-radius: 50px; text-align: center;}
+.life_auto .auto_list ul li dl dd {font-weight: 600; font-size: 2rem;}
+.pause {font-size: 0; width: 10px; height: 10px; background: url(../images/main/stop.png) center; cursor: pointer; filter: invert(0.4);}
+.play {font-size: 0; width: 10px; height: 10px; background: url(../images/main/start.png) center; cursor: pointer; filter: invert(0.4); position: absolute; left: 1px; top: -5px; display: none;}
+.swiper-slide-active {transform: translateY(-30px);}
+
+.play_button {position: relative; width: 10px;}
+.control {display: flex; align-items: center; justify-content: center; gap: 5px;}
+.auto-prev {color: transparent; width: 20px; height: 20px; position: static; background: url(../images/sub/myBC_arrow_s.png) no-repeat center / 25px; transform: rotate(180deg); margin-top: 1px; z-index: 1;}
+.auto-next {color: transparent; width: 20px; height: 20px; position: static; background: url(../images/sub/myBC_arrow_s.png) no-repeat center / 25px; margin-top: 3px; z-index: 1;}
+
+@media (max-width: 1800px) {
+  .life_auto .auto_list ul li dl {padding: 20px 40px; border-radius: 40px;}
+}
+
+@media (max-width: 1100px) {
+    .life_auto h2 {text-align: center; padding: 0;}
+    .life_auto .auto_list {padding: 80px 0 20px;}
+    .life_auto .auto_list ul li dl {border-radius: 30px; padding: 30px 40px;}
+    .life_auto .auto_list ul li dl dd {font-size: 1.4rem;}
+ .life_auto .auto_list ul li dl dt img {width: 70px;} 
+}
+@media (max-width: 770px) {
+  .life_auto .auto_list ul li dl {padding: 20px 30px;}
+}
+
+@media (max-width: 680px) {
+    .life_auto {padding: 80px 0;}
+    .life_auto h2 {font-size: 2.4rem;}
+    .life_auto .auto_list {padding: 70px 0 30px;}
+    .life_auto .auto_list ul li dl {border-radius: 20px;}
+  .life_auto .auto_list ul li dl dt img {width: 50px;}
+}
+
+@media (max-width: 400px) {
+    .life_auto {padding: 50px 0;}
+  .life_auto h2 {font-size: 2rem;}
+}
+
+/* culture */
+.culture {padding-bottom: 100px;}
+.culture h2 {font-size: 3rem; margin-bottom: 50px; font-weight: 600;}
+.culture .reserve_list ul .reserve01 {display: flex; justify-content: center; gap: 20px;}
+.culture .reserve_list ul .reserve02 {display: flex; justify-content: center; gap: 20px;}
+.culture .reserve_list .banner01 a {display: block; width: 680px; border-radius: 50px; height: 400px; background: url(../images/main/finance_bg_01.jpg) no-repeat center / cover; color: #fff; padding: 30px 50px;}
+.culture .reserve_list .banner02 a {display: block; width: 680px; border-radius: 50px; height: 400px; background: url(../images/main/finance_rsp_900_02.jpg) no-repeat center / cover; color: var(--main-color02); padding:30px 50px;}
+
+
+.culture .reserve_list .banner03 a {display: block; width: 680px; border-radius: 50px; height: 400px; background: url(../images/main/finance_rsp_900_03.jpg) no-repeat center / cover; color: var(--main-color02); padding: 30px 50px;}
+.culture .reserve_list .banner04 a {display: block; width: 680px; border-radius: 50px; height: 400px; background: url(../images/main/visual_bg.jpg) no-repeat center / cover; color: #fff; padding: 30px 0; text-align: center;}
+
+.reserve-prev {color: transparent; background: url(../images/main/banner_arrow_prev.png); width: 60px; height: 60px;}
+.reserve-next {color: transparent; background: url(../images/main/banner_arrow_next.png); width: 60px; height: 60px;}
+
+.culture .reserve_list ul li dl dt {font-size: 3rem;}
+.culture .reserve_list ul li dl dd {font-size: 4rem; font-weight: 600;}
+
+.culture .reserve_list .banner04 h3 img {width: 300px; margin-bottom: 20px;}
+.culture .reserve_list .banner04 dl dt {font-size: 2rem;}
+.culture .reserve_list .banner04 dl dd {font-size: 2rem; margin-top: 20px;}
+.culture .reserve_list .banner04 p {margin-top: 20px; font-size: 1.4rem;}
+
+@media (max-width: 1450px) {
+  .culture .reserve_list .banner01 a {width: 510px; height: 300px;}
+  .culture .reserve_list .banner02 a {width: 510px; height: 300px;}
+  .culture .reserve_list .banner03 a {width: 510px; height: 300px;}
+  .culture .reserve_list .banner04 a {width: 510px; height: 300px;}
+  .culture .reserve_list ul li dl dt {font-size: 2rem;}
+.culture .reserve_list ul li dl dd {font-size: 2.4rem; font-weight: 600;}
+
+.culture .reserve_list .banner04 h3 img {width: 200px; margin-bottom: 10px;}
+.culture .reserve_list .banner04 dl dt {font-size: 1.6rem;}
+.culture .reserve_list .banner04 dl dd {font-size: 1.6rem; margin-top: 10px;}
+.culture .reserve_list .banner04 dl dd img {width: 200px;}
+.culture .reserve_list .banner04 p {margin-top: 10px; font-size: 1.2rem;}
+}
+
+@media (max-width: 1100px) {
+  .culture h2 {text-align: center;}
+  .culture .reserve_list ul .reserve01 {display: grid; grid-template-columns: 100%; margin: 0 auto; }
+  .culture .reserve_list ul .reserve02 {display: grid; grid-template-columns: 100%; margin: 0 auto;}
+  .culture .reserve_list .banner01 a {width: 100%;}
+  .culture .reserve_list .banner02 a {width: 100%;}
+  .culture .reserve_list .banner03 a {width: 100%;}
+  .culture .reserve_list .banner04 a {width: 100%;}
+  .reserve-next {display: none;}
+  .reserve-prev {display: none;}
+}
+@media (max-width: 680px) {
+    .culture h2 {font-size: 2.4rem; margin-bottom: 40px;}
+  .culture .reserve_list .banner01 a {height: 240px; border-radius: 20px; padding: 20px;}
+  .culture .reserve_list .banner02 a {height: 240px; border-radius: 20px; padding: 20px;}
+  .culture .reserve_list .banner03 a {height: 240px; border-radius: 20px; padding: 20px;}
+  .culture .reserve_list .banner04 a {height: 240px; border-radius: 20px;}
+  .culture .reserve_list .banner04 h3 img {width: 160px; margin-bottom: 10px;}
+.culture .reserve_list .banner04 dl dt {font-size: 1.6rem;}
+.culture .reserve_list .banner04 dl dd {font-size: 1.6rem; margin-top: 0;}
+.culture .reserve_list .banner04 dl dd img {width: 140px;}
+.culture .reserve_list .banner04 p {margin-top: 10px; font-size: 1.2rem;}
+}
+
+@media (max-width: 460px) {
+  .culture .reserve_list .banner01 a {height: 200px;}
+  .culture .reserve_list .banner02 a {height: 200px; }
+  .culture .reserve_list .banner03 a {height: 200px; }
+  .culture .reserve_list .banner04 a {height: 200px; padding: 15px;}
+  .culture .reserve_list ul li dl dt {font-size: 1.6rem;}
+.culture .reserve_list ul li dl dd {font-size: 2rem; font-weight: 600; line-height: 1;}
+.culture .reserve_list .banner04 dl dt {font-size: 1.4rem;}
+.culture .reserve_list .banner04 dl dd {font-size: 1.4rem; margin-top: 10px;}
+.culture .reserve_list .banner04 dl dd img {width: 120px;}
+.culture .reserve_list .banner04 p {margin-top: 5px; font-size: 1rem;}
+}
+@media (max-width: 400px) {
+  .culture h2 {font-size: 2rem;}
+}
+
+/* service */
+.service {padding-bottom: 200px;}
+.service h2 {font-size: 3rem; margin-bottom: 50px;}
+.service .service_menu {display: grid; grid-template-columns: repeat(4,1fr);gap: 20px; padding: 0 50px;}
+.service .service_menu > li {position: relative;}
+.service .service_menu > li > a {display: block; padding: 10px 20px; background: var(--sub-color02) url(../images/sub/myBC_arrow_b.png) no-repeat right 15px center / 16px; border-radius: 10px; font-size: 1.8rem; font-weight: 600; transition: all 0.3s;}
+.service .service_menu > li:hover > a {background: var(--main-color01) url(../images/sub/arrow_down.png) no-repeat right 15px center / 16px; color: #fff;}
+.service .service_menu > li .sub_menu {list-style: disc; padding: 10px 40px; position: absolute; left: 0; top: 50px; opacity: 0; transition: all 0.5s;}
+.service .service_menu > li:hover .sub_menu {opacity: 1;}
+.service .service_menu > li .sub_menu li a {display: block; padding: 3px; font-weight: 600; transition: all 0.5s; width: 100%;}
+.service .service_menu > li .sub_menu li:hover a {transform: translateX(10px);}
+
+@media (max-width: 1300px) {
+    .service .service_menu > li:hover > a {display: block; padding: 10px 20px; background: var(--sub-color02) url(../images/sub/myBC_arrow_b.png) no-repeat right 15px center / 16px; border-radius: 10px; font-size: 1.8rem; font-weight: 600; color: var(--main-color02);}
+    .service .service_menu > li .sub_menu {position: static; opacity: 1;}
+    .service .service_menu > li .sub_menu li:hover a {transform: translateX(0);}
+  .service .service_menu > li .sub_menu li a { font-size: 1.4rem;}
+  .service .service_menu {grid-template-columns: 100%;}
+}
+
+@media (max-width: 680px) {
+  .service .service_menu {padding: 0;}
+}

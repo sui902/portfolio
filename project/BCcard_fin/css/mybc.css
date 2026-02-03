@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* main */
+#main {padding: 120px 0; margin-top: 134px;}
+#main .inner {display: grid; grid-template-columns: repeat(3,1fr); gap: 50px;}
+
+#header .gnb > li:nth-of-type(1) > a {color: var(--main-color01);}
+#header .gnb > li:nth-of-type(1) > a::after {content: ""; display: block; width: 100%; height: 3px; background: var(--main-color01); margin-top: 5px; transition: all 0.5s;} 
+
+@media (max-width: 1550px) {
+    #main .inner {grid-template-columns: 1fr 1fr; gap: 20px;}
+}
+
+@media (max-width: 1200px) {
+  #main {margin-top: 88px; padding: 60px 0;}
+}
+
+@media (max-width: 850px) {
+  #main .inner {grid-template-columns: 100%;}
+}
+
+/* my_info */
+.my_info {padding: 20px 0 20px 20px;}
+.my_info ul {margin-bottom: 120px;}
+.my_info ul li dl {display: flex; align-items: center; gap: 20px; font-weight: 500;}
+.my_info .my_name dl dt {font-size: 2.4rem; font-weight: 600; display: flex; align-items: center; gap: 10px;}
+.my_info ul li {margin-bottom: 10px;}
+.my_info ul li:nth-of-type(3) {margin-bottom: 15px;}
+.my_info ul li:first-child {margin-bottom: 20px;}
+.my_info .my_name dl dt span {font-size: 1.4rem; font-weight: 600; font-weight: 600; padding: 1px 10px 2px 20px; border: 1px solid #333; border-radius: 30px; background: url(../images/sub/myBC_icon_level.png) no-repeat left 8px center; height: 24px;}
+.my_info .my_name dl dd a {display: block; font-size: 1.4rem; padding-right: 12px; background: url(../images/sub/myBC_arrow_b.png) no-repeat right top 4px / 12px 12px;}
+.my_info .my_point dl dd {font-size: 2.4rem; font-weight: 600; padding-bottom: 5px;}
+.my_info .my_point dl dd span {color: var(--main-color01)}
+.my_info .my_tag dl dd a {display: inline-block; color: #999; font-weight: 400; padding-right: 18px; background: url(../images/sub/myBC_arrow_s.png) no-repeat right center;}
+.my_info .my_security dl dt {display: inline-block; padding-right: 20px; background: url(../images/sub/myBC_icon_lock.png) no-repeat right center;}
+.my_info .my_security dl dd a {display: inline-block; color: #999; font-weight: 400; padding-right: 20px; background: url(../images/sub/myBC_arrow_s.png) no-repeat right center;}
+.my_info h2 {font-weight: 600; font-size: 2.4rem; margin-bottom: 30px;}
+.my_info .use a {display: block; border-radius: 50px; background: #fff; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); padding: 30px 40px 30px 40px; text-align: center;}
+.my_info .use dt {font-size: 3.6rem; font-weight: 600; margin-bottom: 70px; text-align: left;}
+.my_info .use dd:nth-of-type(1) { display: inline-block; font-size: 2.4rem; font-weight: 600; color: #999; padding-right: 20px; background: url(../images/sub/myBC_arrow_s.png) no-repeat right center; padding: 0 18px; margin-bottom: 10px;}
+.my_info .use dd:nth-of-type(1) span {color: var(--main-color01); font-size: 2.6rem;}
+.my_info .use dd:nth-of-type(2) {font-size: 3.2rem; font-weight: 600; margin-bottom: 80px;}
+
+@media (max-width: 850px) {
+  .my_info {display: flex; justify-content: center; gap: 30px; align-items: center; padding: 0;}
+  .my_info ul {margin-bottom: 0; background: #fff; border-radius: 50px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); padding: 30px 60px;}
+  .my_info h2 {display: none;}
+  .my_info .use a {padding: 30px}
+  .my_info .use dt {margin-bottom: 20px;}
+  .my_info .use dd:nth-of-type(1) {font-size: 2rem;}
+  .my_info .use dd:nth-of-type(1) span {font-size: 2.2rem;}
+  .my_info .use dd:nth-of-type(2) {margin-bottom: 20px; font-size: 2.8rem;}
+}
+
+@media (max-width: 750px) {
+.my_info ul li dl {display: block;}
+.my_info .my_name dl dd a {display: inline-block;}
+.my_info .use a {padding: 70px 30px;}
+.my_info .use dt {margin-bottom: 40px; text-align: center;}
+}
+
+@media (max-width: 620px) {
+  .my_info {display: block;}
+  .my_info ul {margin-bottom: 50px;}
+  .my_info .use {margin-bottom: 50px;}
+}
+
+/* my_payment */
+.my_payment {border-radius: 50px; background: #fff; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); padding: 20px 20px 0 20px; height: 737px;}
+.my_payment dl {padding: 30px 30px 20px 50px;}
+.my_payment dl dt {font-weight: 600; font-size: 1.8rem; margin-bottom: 10px;}
+.my_payment dl dt span{color: var(--main-color01);}
+.my_payment dl dd a {display: block; font-size: 3.2rem; font-weight: 600; padding-right: 30px; background: url(../images/sub/myBC_arrow_b.png) no-repeat right center; display: inline-block;}
+.account {border-radius: 30px; background: linear-gradient(#e68993,#ff4b5d); color: #fff; padding: 30px; margin-top: 85px;}
+.account h3 {font-weight: 400; font-size: 1.6rem; padding: 5px 20px; border: 1px solid #fff; border-radius: 50px; display: inline-block;}
+.account dl {margin: 0 auto; padding: 40px 30px 20px 50px;}
+.account dl dt {margin: 0}
+.account dl dd {background: none; font-size: 2.8rem; padding: 0; font-weight: 600;}
+.account > a {background: url(../images/sub/myBC_arrow_w.png) no-repeat right top 2px; padding-right: 20px; display: inline-block; margin: 0 128px 40px;}
+.account .pay_box {display: flex; justify-content: center; gap: 15px;} 
+.account .pay_box a {display: inline-block; padding: 10px 50px; color: var(--main-color01); background: #fff; border-radius: 50px; font-weight: 600; font-size: 2rem; transition: all 0.5s;}
+
+@media (max-width: 1550px) {
+  .account {text-align: center;}
+  .account dl {padding: 40px 0 20px;}
+  .account > a {margin: 0 0 40px;}
+}
+
+@media (max-width: 1050px) {
+  .account .pay_box a {font-size: 1.6rem; padding: 10px 30px;}
+  .account > a {margin: 0 0 50px;}
+  .account dl dd {font-size: 2.4rem;}
+}
+
+@media (max-width: 700px) {
+  .account > a {margin: 0 0 50px;}
+}
+@media (max-width: 400px) {
+.account dl dd {font-size: 2rem;} 
+  .account .pay_box a {padding: 10px 24px;}
+}
+
+/* my_card */
+.my_card {padding: 20px 20px 20px 0;}
+.my_card h2 {font-size: 2.4rem; font-weight: 600;}
+.my_card a.btn_more {display: inline-block; color: #999; font-weight: 500; padding-right: 18px; background: url(../images/sub/myBC_arrow_s.png) no-repeat right center; margin: 5px 0 20px;}
+.my_card .my_card_list a {display: flex; align-items: center; background: #fff url(../images/sub/myBC_arrow_b.png) no-repeat right 20px center; border-radius: 40px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); padding: 24px; margin-bottom: 20px;}
+.my_card .my_card_txt h3 {font-size: 1.6rem; color: #999; font-weight: 600;}
+.my_card .my_card_txt p {font-size: 2rem; font-weight: 600; margin-bottom: 15px;}
+.my_card .my_card_txt span {font-weight: 500; color: #999;}
+
+@media (max-width: 1550px) {
+    .my_card {grid-column: 1 / 3; padding: 0; margin-top: 100px;}
+    .my_card_list {display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
+    .my_card .my_card_list a {margin-bottom: 0;}
+}
+ @media (max-width: 1050px) {
+    /* .my_card .my_card_list a {background: none;} */
+ }
+
+ @media (max-width: 850px) {
+   .my_card {grid-column: 1 / 1; margin-top: 50px;}
+   .my_card .my_card_title {text-align: center;}
+   .my_card_list {display: grid; grid-template-columns: 100%;}
+ }
+
+ @media (max-width: 440px) {
+   .my_card .my_card_list a {padding: 10px; background: none;}
+   .my_card .my_card_txt h3 {font-size: 1.4rem;}
+.my_card .my_card_txt p {font-size: 1.6rem;}
+ }

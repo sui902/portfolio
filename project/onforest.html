@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온숲한의원</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: #eee;
+        }
+
+        #wrap {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            position: fixed;
+            right: 10%;
+            bottom: 0;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn a.view {
+            background: #FF9898;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn a.gotop {
+            background: #FFF4ED;
+            color: #FF9898;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        #leaflet {
+            position: absolute;
+            top: 7350px;
+        }
+
+        #card {
+            position: absolute;
+            top: 8600px;
+        }
+
+
+
+        @media (max-width: 1000px) {
+            #leaflet {
+                top: 2800px;
+            }
+
+            #card {
+                top: 3400px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .btn {
+                display: none;
+            }
+
+            #leaflet {
+                top: 2700px;
+            }
+
+            #card {
+                top: 3200px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #leaflet {
+                top: 1200px;
+            }
+
+            #card {
+                top: 1500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="btn"><a
+                href="https://www.figma.com/design/3iCSuesMZKFlyJI6b12RdZ/%EC%98%A8%EC%88%B2%ED%95%9C%EC%9D%98%EC%9B%90_%EB%B8%8C%EB%9E%9C%EB%94%A9?node-id=46-7&t=eyuP2detxU7XUiml-1"
+                class="view" target="_blank">View</a><a href="#" class="gotop">↑</a></div>
+        <a href="https://www.figma.com/design/3iCSuesMZKFlyJI6b12RdZ/%EC%98%A8%EC%88%B2%ED%95%9C%EC%9D%98%EC%9B%90_%EB%B8%8C%EB%9E%9C%EB%94%A9?node-id=46-7&t=eyuP2detxU7XUiml-1"
+            target="_blank">
+            <img src="../images/On_guide.jpg" alt="온숲한의원 상세페이지">
+            <div id="leaflet"></div>
+            <div id="card"></div>
+        </a>
+    </div>
+</body>
+
+</html>

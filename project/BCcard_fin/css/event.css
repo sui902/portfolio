@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* main */
+#main {margin-top: 134px;}
+
+@media (max-width: 1200px) {
+  #main {margin-top: 88px;}
+}
+
+
+#header .gnb > li:nth-of-type(2) > a {color: var(--main-color01);}
+#header .gnb > li:nth-of-type(2) > a::after {content: ""; display: block; width: 100%; height: 3px; background: var(--main-color01); margin-top: 5px; transition: all 0.5s;}  
+
+
+
+
+/* event_banner */
+.event .inner .event_title h2 {font-weight: 600; font-size: 3rem; margin-left: 80px;}
+.event a.btn_more {color: #999; padding-right: 20px; background: url(../images/sub/myBC_arrow_s.png) no-repeat right top; font-weight: 600; margin-left: 80px;}
+.event .event_list {margin-top: 50px;}
+.event .event_list .event_banner {display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; padding-bottom: 60px;}
+
+
+.event .event_list .event_banner a {box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); border-radius: 50px; overflow: hidden; ;}
+
+
+.event .event_list .event_banner .travel {width: 600px; height: 300px; background: #55ADFF url(../images/main/visual_bg_chara.png) no-repeat right 30px center / 300px; padding: 50px 60px; color: #fff;}
+.event .event_list .event_banner .travel img {width: 180px; margin-bottom: 20px;}
+.event .event_list .event_banner .travel strong {font-size: 2.2rem; line-height: 1.2; margin: 10px 0; display: inline-block;}
+.event .event_list .event_banner .travel span {font-size: 1.8rem; display: block;}
+.event .event_list .event_banner .travel dl dt {padding: 5px 10px; background: #fff; font-size: 1.4rem; color: #55ADFF; border-radius: 50px; display: inline-block; margin: 5px 0 10px;}
+.event .event_list .event_banner .travel dl dd {font-size: 1.4rem;}
+
+
+.event .event_list .event_banner2 {display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; padding-bottom: 60px;}
+
+.event .event_list .event_banner2 a {box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); border-radius: 50px; overflow: hidden; ;}
+
+.event .event_list .event_banner2 .hyundae {width: 600px; height: 300px; padding: 60px 50px; background: #231F20 url(../images/main/visual_bg_card.png)no-repeat right 30px center / 250px; color: #fff;}
+.event .event_list .event_banner2 .hyundae h3 {font-size: 2.4rem;}
+.event .event_list .event_banner2 .hyundae span {display: block; font-weight: 500; font-size: 2rem;}
+
+.event .event_list .event_banner2 .classic {width: 600px; height: 300px; padding: 30px 0; text-align: center; background: url(../images/main/visual_bg.jpg) center /cover; color: #fff; font-family: var(--sub-font); }
+.event .event_list .event_banner2 .classic h3 img {width: 200px;}
+.event .event_list .event_banner2 .classic strong img {width: 160px; margin-top: 15px;}
+.event .event_list .event_banner2 .classic p {margin-top: 15px; font-weight: 300; font-size: 1.4rem;}
+.event .event_list .event_banner2 span {font-weight: 300; font-size: 1.2rem; display: inline-block; margin-top: 15px;}
+
+
+.event .mini_banner {display: flex; gap: 20px;}
+.event .mini_banner a:nth-child(1) {background: url(../images/sub/banner_bg01.jpg) no-repeat center / cover; display: block; width: 300px; height: 300px; padding: 30px; color: #fff;}
+.event .mini_banner a:nth-child(1) h3 {font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;}
+.event .mini_banner a:nth-child(1) ul li {text-align: center; font-size: 1.4rem; font-weight: 500;}
+.event .mini_banner a:nth-child(1) span {color: var(--main-color01);}
+
+.event .mini_banner a:nth-child(2) {padding: 30px; width: 300px; height: 300px; color: #fff; background: url(../images/sub/banner_bg02.jpg) no-repeat center / cover;}
+.event .mini_banner a:nth-child(2) ul li { font-weight: 500;}
+.event .mini_banner a:nth-child(2) ul li:nth-child(3) {background: url(../images/sub/effect.png) no-repeat right 110px center;}
+.event .mini_banner a:nth-child(2) ul li strong {color: var(--main-color01); }
+.event .mini_banner a:nth-child(2) h3 {text-align: center; font-size: 2.8rem; font-weight: 500; line-height: 1.2; margin-top: 110px;}
+.event .mini_banner a:nth-child(2) span {font-size: 2rem; font-weight: 500; color: var(--main-color01); display: block;}
+
+.event .swiper-button-next {width: 60px; height: 60px; top: 150px; right: 60px; color: transparent; background: url(../images/main/banner_arrow_next.png);}
+.event .swiper-button-prev {width: 60px; height: 60px; top: 150px; left: 60px; color: transparent; background: url(../images/main/banner_arrow_prev.png);}
+
+@media (max-width: 1276px) {
+  .event .event_title {text-align: center;}
+  .event .inner .event_title h2 {margin-left: 0;}
+  .event a.btn_more {margin-left: 5px;}
+}
+
+@media (max-width: 900px) {
+  .event .swiper-button-next {display: none;}
+.event .swiper-button-prev {display: none;}
+}
+
+@media (max-width:700px) {
+  .event .event_list {margin-top: 20px;}
+  .event .event_list .event_banner .travel {height: 200px; width: 410px; background: #55ADFF url(../images/main/visual_bg_chara.png) no-repeat right center / 240px; padding: 50px 20px;}
+  .event .event_list .event_banner .travel h3 img {width: 120px;}
+  .event .event_list .event_banner .travel span {font-size: 1.6rem;}
+  .event .event_list .event_banner .travel strong {font-size: 2rem; margin: 0;}
+  .event .event_list .event_banner .travel dl {display: none;}
+  .event .mini_banner a:nth-child(1) {height: 200px; width: 200px; padding: 15px;}
+  .event .mini_banner a:nth-child(2) {height: 200px; width: 200px;}
+  .event .mini_banner {gap: 10px;}
+  .event .event_list .event_banner {gap: 10px;}
+  .event .event_list .event_banner2 {gap: 10px;}
+  .event .event_list .event_banner2 .classic {height: 200px; width: 410px; padding: 10px;}
+  .event .event_list .event_banner2 .classic span {display: none;}
+  .event .event_list .event_banner2 .classic h3 img {width: 160px;}
+  .event .event_list .event_banner2 .classic strong img {width: 160px; margin: 10px 0;}
+  .event .event_list .event_banner2 .classic p {font-size: 1.2rem; margin-top: 5px;}
+  .event .event_list .event_banner2 .hyundae {height: 200px; width: 400px; background: #231F20 url(../images/main/visual_bg_card.png)no-repeat right 20px center / 165px; color: #fff; padding: 40px;}
+  .event .event_list .event_banner2 .hyundae h3 {font-size: 2rem;}
+.event .event_list .event_banner2 .hyundae span {display: block; font-weight: 500; font-size: 2rem;}
+  .event .event_list .event_banner a {border-radius: 30px;}
+  .event .event_list .event_banner2 a {border-radius: 30px;
+  }
+  .event .mini_banner a:nth-child(1) ul li {display: none;}
+  .event .mini_banner a:nth-child(1) h3 {font-size: 1.8rem; text-align: center;}
+  .event .mini_banner a:nth-child(2) {padding: 15px;}
+  .event .mini_banner a:nth-child(2) ul li {display: none;}
+  .event .mini_banner a:nth-child(2) h3 {margin-top: 0; font-size: 1.8rem;}
+  .event .mini_banner a:nth-child(2) h3 span {color: #222;}
+}
+@media (max-width: 430px) {
+  .event .event_list .event_banner .travel {height: 160px; width: 320px; background: #55ADFF url(../images/main/visual_bg_chara.png) no-repeat right center / 200px; padding: 35px 20px;}
+  .event .event_list .event_banner .travel h3 img {width: 100px;}
+  .event .event_list .event_banner .travel span {font-size: 1.4rem;}
+  .event .event_list .event_banner .travel strong {font-size: 1.6rem; margin: 0;}
+  .event .mini_banner a:nth-child(1) {height: 155px; width: 155px; padding: 15px;}
+  .event .mini_banner a:nth-child(2) {height: 155px; width: 155px;}
+  .event .event_list .event_banner2 .hyundae {height: 160px; width: 320px; background: #231F20 url(../images/main/visual_bg_card.png)no-repeat right 20px center / 131px; color: #fff; padding: 40px;}
+  .event .event_list .event_banner2 .hyundae h3 {font-size: 1.6rem;}
+.event .event_list .event_banner2 .hyundae span {font-size: 1.4rem;}
+.event .event_list .event_banner2 .classic {width: 320px; height: 160px; padding: 10px 0;}
+.event .event_list .event_banner2 .classic h3 img {width: 120px;}
+  .event .event_list .event_banner2 .classic strong img {width: 120px; margin: 5px 0;}
+  .event .event_list .event_banner2 .classic p {font-size: 1rem; margin-top: 5px;}
+  .event .event_list .event_banner a {box-shadow: none;}
+  .event .event_list .event_banner2 a {box-shadow: none;}
+}
+
+/* mytag_banner */
+.mytag_banner {padding: 60px 0 120px;}
+.mytag_banner .inner {position: relative; max-width: 1280px;}
+.mytag_banner .inner > a {display: block; background: url(../images/sub/mytag_bg.png) no-repeat center / cover; border-radius: 50px; overflow: hidden; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); padding: 70px;}
+.mytag_banner .tag_txt h2 {display: flex; align-items: center;}
+.mytag_banner .tag_txt h2 img {padding-bottom: 10px;}
+.mytag_banner .tag_txt h2 span {font-size: 3.6rem; margin-left: 15px; color: var(--main-color01);}
+.mytag_banner .tag_txt p {font-size: 2.4rem; font-weight: 600; color: var(--main-color01); margin-bottom: 40px;}
+.mytag_banner .tag_txt strong {font-weight: 700;}
+.mytag_banner .btn_tag {display: flex; gap: 10px; align-items: center; position: absolute; right: 40px; bottom: 20px; z-index: 2; width: 138  px;}
+.mytag_banner .btn_tag li {text-align: center; line-height: 1.2; color: var(--main-color01); font-weight: 600;}
+
+
+@media (max-width: 1276px) {
+ .mytag_banner .inner > a {padding: 20px;}
+ .mytag_banner .tag_txt h2 img {padding-bottom: 10px;}
+.mytag_banner .tag_txt h2 span {font-size: 3rem;}
+.mytag_banner .tag_txt p {font-size: 2rem; font-weight: 600; color: var(--main-color01); margin-bottom: 100px;}
+.mytag_banner .tag_txt strong {font-weight: 700;}
+.mytag_banner .btn_tag {left: 50px; bottom: 20px;}
+}
+
+@media (max-width: 900px) {
+  .mytag_banner .tag_txt h2 span {display: none;}
+.mytag_banner .tag_txt p {display: none;}
+.mytag_banner .tag_txt h2 img {margin-bottom: 130px; width: 120px;}
+.mytag_banner .btn_tag { bottom: 120px; gap: 5px;}
+.mytag_banner .btn_tag img {width: 30px;}
+.mytag_banner {padding: 100px 0;}
+}
+
+
+@media (max-width: 450px) {
+  .mytag_banner {padding: 50px 0;}
+  .mytag_banner .tag_txt h2 img {margin-bottom: 60px; width: 60px;}
+  .mytag_banner .btn_tag {left: 55px; bottom: 60px; gap: 5px; font-size: 1.2rem;}
+.mytag_banner .btn_tag img {width: 20px;}
+.mytag_banner .inner > a {border-radius: 20px; width: 90%; margin: 0 auto;}
+
+
+}
+
+
+/* benefit */
+.benefit .inner {max-width: 1280px; margin-bottom: 200px;}
+ .benefit h2 {font-size: 3rem; font-weight: 600; margin-bottom: 40px;}
+ .benefit ul {background: #fff; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); display: grid; grid-template-columns: repeat(4,1fr); text-align: center; border-radius: 50px;} 
+ .benefit ul dl {padding: 90px 50px;}
+ .benefit ul dl dt {font-size: 2.4rem; font-weight: 600; margin-bottom: 50px;}
+ .benefit ul dl dd a {font-weight: 600; font-size: 2rem; color: #333; display: inline-block; padding-right: 20px; background: url(../images/sub/myBC_arrow_m.png) no-repeat right center; filter: invert(0.7);}
+
+.benefit ul li:first-child {border-radius: 50px; background: var(--main-color01); color: #fff;}
+.benefit ul li:first-child a {filter: none; background: url(../images/sub/myBC_arrow_w.png) no-repeat right top 2px / 28px; color: #fff; padding-right: 24px;}
+
+.benefit ul li {position: relative;}
+.benefit ul li:nth-of-type(2):after {content: ""; display: block; width: 1px; height: 160px; background: #e1e1e1; position: absolute; right: 0;; top: 50%; transform: translateY(-50%);}
+.benefit ul li:nth-of-type(3):after {content: ""; display: block; width: 1px; height: 160px; background: #e1e1e1; position: absolute; right: 0;; top: 50%; transform: translateY(-50%);}
+
+@media (max-width: 1276px) {
+    .benefit .inner {margin-bottom: 100px;}
+    .benefit h2 {text-align: center;}
+}
+@media (max-width: 1080px) {
+    .benefit ul {grid-template-columns: 1fr 1fr;}  
+}
+@media (max-width: 850px) {
+  .benefit ul li dl {padding: 70px 30px;}
+  .benefit ul dl dt {font-size: 2rem; margin-bottom: 30px;}
+  .benefit ul li:nth-of-type(2):after {width: 0;}
+}
+@media (max-width: 440px) {
+  .benefit ul {border-radius: 30px; width: 90%; margin: 0 auto;}
+  .benefit ul li dl {padding: 40px 10px;}
+  .benefit ul li:first-child {border-radius: 30px;}
+  .benefit ul li:first-child a {filter: none; background: url(../images/sub/myBC_arrow_w.png) no-repeat right 5px top 1px / 20px; color: #fff; padding-right: 24px;}
+  .benefit ul dl dt {font-size: 1.2rem; margin-bottom: 20px;}
+  .benefit ul dl dd a {font-size: 1.4rem;}
+  .benefit ul li:nth-of-type(3):after {height: 100px;}
+}
