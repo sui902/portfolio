@@ -20,7 +20,7 @@ body {font-family: var(--main-font01); line-height: 1.5; color: #333; font-size:
 
 #header.on-scroll {
  height: 70px;   /* 필요하다면 스크롤 시 헤더 전체 높이를 조절하세요 */
- background: rgba(255, 255, 255, 0.2);
+ background: rgba(255, 255, 255, 0.6);
 }
 
 #header.on-scroll h1 {
