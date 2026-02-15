@@ -108,6 +108,7 @@ body {font-family: var(--main-font01); line-height: 1.5; color: #333; font-size:
 /* mgnb */
 .mgnb_wrap {width: 500px; height: 100%; position: fixed; right: 0; top: 0; background: #fff; z-index: 210; padding: 30px 20px 30px 10px; display: none;}
 .mgnb_wrap .mgnb_logo img {width: 173px;}
+.mgnb_wrap .login {border: 1px solid var(--main-color01); padding: 6px 18px; margin-left: 65px; color: var(--main-color01); border-radius: 50px; }
 .mgnb_wrap .close_mgnb {background: transparent; position: absolute; top: 75px; right: 40px; cursor: pointer;}
 .mgnb_wrap .mgnb {padding: 60px 0px 60px 65px;}
 .mgnb_wrap .mgnb > li {padding: 20px 0; border-top: 1px solid rgba(0, 0, 0, 0.1);}
