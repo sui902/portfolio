@@ -9,7 +9,7 @@ body {font-family: var(--main-font01); line-height: 1.5; color: #333; font-size:
 :root {
     --main-color01: #7DC486;
     --main-color02: #7BCA7B;
-    --main-font01: "Pretendard Variable", sans-serif;
+    --main-font01: 'Pretendard Variable', sans-serif;
     --sub-font01: 'SangjuGotgam', sans-serif;
     --sub-font02: 'YeogiOttaeJalnan', sans-serif;
     --sub-font03: 'WanjuDaedunsan', sans-serif;
