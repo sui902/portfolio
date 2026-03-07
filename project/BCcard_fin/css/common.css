@@ -9,7 +9,7 @@ body {font-family: var(--main-font); font-size: 1.6rem; line-height: 1.5; color:
 .inner {max-width: 1540px; padding: 0 20px; margin: 0 auto;}
 
 :root {
-    --main-font: "Pretendard", sans-serif;
+    --main-font: 'Pretendard Variable', sans-serif;
     --sub-font: "GmarketSans", sans-serif;
     --main-color01: #ff4b5d;
     --main-color02: #323232;
