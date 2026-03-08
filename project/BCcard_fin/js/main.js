@@ -1,5 +1,6 @@
 AOS.init({
   duration: 1000,
+  once: true,
 });
 
 const visual_list = new Swiper(".visual_list", {
